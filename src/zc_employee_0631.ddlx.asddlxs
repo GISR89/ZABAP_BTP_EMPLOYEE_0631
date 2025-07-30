@@ -1,0 +1,223 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ENumber'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ENumber'
+annotate view ZC_EMPLOYEE_0631 with
+{
+  @EndUserText.label: 'ENumber'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ENumber'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ENumber'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  ENumber;
+  
+  @EndUserText.label: 'EName'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'EName'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'EName'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  EName;
+  
+  @EndUserText.label: 'EDepartment'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'EDepartment'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'EDepartment'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  EDepartment;
+  
+  @EndUserText.label: 'Status'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Status'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Status;
+  
+  @EndUserText.label: 'JobTitle'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'JobTitle'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'JobTitle'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  JobTitle;
+  
+  @EndUserText.label: 'StartDate'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'StartDate'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'StartDate'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  StartDate;
+  
+  @EndUserText.label: 'EndDate'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'EndDate'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'EndDate'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  EndDate;
+  
+  @EndUserText.label: 'Email'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Email'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Email'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Email;
+  
+  @EndUserText.label: 'MNumber'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'MNumber'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'MNumber'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  MNumber;
+  
+  @EndUserText.label: 'MName'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'MName'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'MName'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  MName;
+  
+  @EndUserText.label: 'MDepartment'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'MDepartment'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'MDepartment'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  MDepartment;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  LastChangedAt;
+}
