@@ -1,27 +1,24 @@
 managed implementation in class ZBP_R_EMPLOYEE_0631 unique;
 strict ( 2 );
 with draft;
-extensible;
+
 define behavior for ZR_EMPLOYEE_0631 alias ZrEmployee0631
-persistent table ZEMPLOYEE_0631
-extensible
-draft table ZEMPLOYEE_0631_D
+persistent table zemployee_0631
+
+draft table zemployee_0631_d
 etag master LocalLastChangedAt
 lock master total etag LastChangedAt
-authorization master( global )
+authorization master ( global )
 
 {
-  field ( readonly )
-   ENumber,
-   LocalCreatedBy,
-   LocalCreatedAt,
-   LocalLastChangedBy,
-   LocalLastChangedAt,
-   LastChangedAt;
+  field ( readonly ) ENumber,
+  LocalCreatedBy,
+  LocalCreatedAt,
+  LocalLastChangedBy,
+  LocalLastChangedAt,
+  LastChangedAt;
 
-  field ( numbering : managed )
-   ENumber;
-
+  field ( numbering : managed ) ENumber;
 
   create;
   update;
@@ -33,24 +30,24 @@ authorization master( global )
   draft action Resume;
   draft determine action Prepare;
 
-  mapping for ZEMPLOYEE_0631 corresponding extensible
-  {
-    ENumber = e_number;
-    EName = e_name;
-    EDepartment = e_department;
-    Status = status;
-    JobTitle = job_title;
-    StartDate = start_date;
-    EndDate = end_date;
-    Email = email;
-    MNumber = m_number;
-    MName = m_name;
-    MDepartment = m_department;
-    LocalCreatedBy = local_created_by;
-    LocalCreatedAt = local_created_at;
-    LocalLastChangedBy = local_last_changed_by;
-    LocalLastChangedAt = local_last_changed_at;
-    LastChangedAt = last_changed_at;
-  }
+  mapping for zemployee_0631
+    {
+      ENumber            = e_number;
+      EName              = e_name;
+      EDepartment        = e_department;
+      Status             = status;
+      JobTitle           = job_title;
+      StartDate          = start_date;
+      EndDate            = end_date;
+      Email              = email;
+      MNumber            = m_number;
+      MName              = m_name;
+      MDepartment        = m_department;
+      LocalCreatedBy     = local_created_by;
+      LocalCreatedAt     = local_created_at;
+      LocalLastChangedBy = local_last_changed_by;
+      LocalLastChangedAt = local_last_changed_at;
+      LastChangedAt      = last_changed_at;
+    }
 
 }

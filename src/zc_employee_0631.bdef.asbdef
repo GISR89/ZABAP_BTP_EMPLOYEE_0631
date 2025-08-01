@@ -1,10 +1,8 @@
-projection implementation in class ZBP_C_EMPLOYEE_0631 unique;
+projection ;
 strict ( 2 );
-extensible;
 use draft;
-use side effects;
+
 define behavior for ZC_EMPLOYEE_0631 alias ZcEmployee0631
-extensible
 use etag
 
 {
